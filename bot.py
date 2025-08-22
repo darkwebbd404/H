@@ -7,11 +7,11 @@ import random
 import string
 
 # Use environment variables for security
-TOKEN = os.getenv("8441050494:AAHYReJVCmIW0v7ytn3ye2xhKHpm6LbV9mA")
-if not TOKEN:
+BOT_TOKEN = "8441050494:AAHYReJVCmIW0v7ytn3ye2xhKHpm6LbV9mA"
+if not BOT_TOKEN:
     raise ValueError("BOT_TOKEN is missing! Set it as an environment variable.")
 
-bot = telebot.TeleBot(TOKEN)
+bot = telebot.TeleBot(BOT_TOKEN)
 
 # API URL Template
 API_URL = "https://vhbj.vercel.app/token?uid={uid}&password={password}"
