@@ -14,7 +14,7 @@ if not BOT_TOKEN:
 bot = telebot.TeleBot(BOT_TOKEN)
 
 # API URL Template
-API_URL = "https://a-tjwt.vercel.app/api/majorlogin_jwt?access_token="
+API_URL = "https://vhbj.vercel.app/token?uid={uid}&password={password}"
 
 # Required Telegram Channel
 CHANNEL_USERNAME = "@shsvacscscsc"
